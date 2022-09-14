@@ -24,11 +24,18 @@ $('.slider').slick({
   });
 });
 
-// アクセスフェードイン
+// フェードイン
 $(function(){
     $(window).scroll(function (){
       const windowHeight = $(window).height();
       const scroll = $(window).scrollTop();
+
+      $('.staffimg').each(function () {
+        const targetPosition = $(this).offset().top;
+        if (scroll > targetPosition - windowHeight + 100) {
+          $(this).addClass("is-fadein");
+        }
+      });
 
       $('.access-img').each(function () {
         const targetPosition = $(this).offset().top;
