@@ -66,38 +66,6 @@ header{
   z-index: 1;
 }
 
-/* button.nav_toggle{
-  position: relative;
-  width: 4.75rem;
-  height: 2.5rem;
-  border: none;
-  outline: none;
-  background-color: transparent;
-  margin: 2% 0 0 95%;
-}
-
-.hamnav{
-  position: fixed;
-  top: 3rem;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 1rem;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity .5s, visibility .5s;
-}
-
-.hamnav.show{
-  opacity: 1;
-  visibility: visible;
-}
-
-.hamburgermenu{
-  text-align: center;
-  background-color: #FFF;
-} */
-
 button.nav_toggle{
   position: fixed;
   top: 20px;
@@ -259,7 +227,7 @@ ul.slider img{
 .menu_textbox h2{
   margin-top: 80px;
   text-align: center;
-  color: rgba(83,82,82,1);
+  z-index: 0;
 }
 
 .menu_wrap{
@@ -496,11 +464,9 @@ footer img{
 }
 
 @media screen and (max-width:1000px){
-
-
 @media screen and (max-width:750px){
 .inner{
-  width: 100%;
+  max-width: 100%;
 }
 
 body{
@@ -532,37 +498,51 @@ h1{
   animation: blur 3s both ease-in;
 }
 
+.top-logo img{
+  width: 20%;
+}
+
+button.nav_toggle{
+  width: 5%;
+  height: 1.8%;
+  top: 13px;
+}
+
+.hamburgermenu.is-active{
+  padding: 0;
+}
 /* メニュー */
 #menu{
-  position: relative;
+  position: static;
   max-width: 100%;
   height: auto;
 }
 
 #menu img{
+  display: none;
   max-width: 100%;
 }
 
 .menu_textbox{
   position: static;
-  /* -ms-transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%); */
-  width: 1090px;
-  height: 1000px;
+  transform: none;
+  max-width: 100%;
+  height: auto;
   background-color: #FFF;
   opacity: 0.8;
 }
 
 .menu_textbox h2{
-  margin-top: 80px;
+  margin: 80px 0 0 0;
   text-align: center;
   color: rgba(83,82,82,1);
 }
 
 .menu_wrap{
+  max-width: 100%;
   display: block;
   margin: 0 auto;
+  padding: 0 10% 3% 10%;
   justify-content: center;
   color:rgba(83,82,82,1);
 }
@@ -581,12 +561,12 @@ h3{
 dl.cutmenu{
   display: flex;
   justify-content: space-between;
-  padding: 15px 0;
+  padding: 3% 0;
   margin-bottom: 10px;
   border-bottom: dotted;
   border-color: #2D2C2C;
   border-width: 1px;
-  font-size: 14px;
+  font-size: 11px;
 }
 
 dt{
@@ -599,13 +579,85 @@ p.tax{
   text-align: center;
 }
 
-.menu_textbox h2{
-  opacity: 1;
+/* スタッフ */
+#staff_title{
+  margin-bottom: 12%;
+}
+
+.staffimg{
+  padding: 0 5%;
+}
+
+.staffimg img{
+  height: 100px;
+}
+
+.staff-box h3{
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+/* ニュース */
+#news{
+  width: 100%;
+  height: auto;
+  display: block;
+  justify-content: center;
+}
+
+.news_block{
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0 5%;
+  margin-bottom: 5%;
+}
+
+#news_title{
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+ul.news_text{
+  width: 100%;
+  padding: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  justify-content: center;
+}
+
+li.news_textitem{
+  display: flex;
+  justify-content: center;
+}
+
+p.date{
+  width: 30%;
+  padding: 0;
+}
+
+p.topic{
+  width: 50%;
+  padding: 0;
+  text-align: center;
+}
+
+p.n_viewbox{
+  border: solid 2px #565555;
+  margin: 0 30%;
+  text-align: center;
+  padding: 0.5em 1em;
+}
+
+p.n_viewbox:hover{
+  color: #FFF;
+  background-color: #565555;
+  border: solid 2px;
 }
 
 /* アクセス */
 #access{
-  display: static;
+  display: block;
   width: 100%;
   height: auto;
   margin: 13% 0;
@@ -615,33 +667,14 @@ p.tax{
   display: none;
 }
 
-.access-box2{
-  width: 100%;
-}
-
-.access-img{
-  width: 100%;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(30px);
-  transition: opacity 1s, visibility 1s, transform 1s;
-}
-
-.is-fadein{
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(0);
-}
-
-.access-img img{
-  max-width: 100%;
-  height: auto;
-}
-
-.access-text{
-  width: 100%;
-}
-
 #access_title{
-  width: 100%;
+  text-align: center;
+}
+
+.access-text p{
+  text-align: center;
+  margin: 0;
+}
+
+}
 }
