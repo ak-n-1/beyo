@@ -478,26 +478,6 @@ h1{
   font-size: 20px;
 }
 
-.top-img2{
-  width: 100%;
-  height: auto;
-}
-
-.top-img2 img{
-  width: 100%;
-  height: auto;
-}
-
-.titlecopy{
-  position: absolute;
-  top: 30%;
-  left: 10%;
-  font-family: josefin-sans, sans-serif;
-  font-size: 30px;
-  color: #FFF;
-  animation: blur 3s both ease-in;
-}
-
 .top-logo img{
   width: 20%;
 }
@@ -571,7 +551,6 @@ dl.cutmenu{
 
 dt{
   text-align: left;
-  /* margin-right: 70px; */
 }
 
 p.tax{
