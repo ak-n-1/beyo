@@ -38,7 +38,8 @@ a:link,a:visited{
   color: #2D2C2C;
   text-decoration: none;
 }
-
+.pc { display: block !important; }
+.sp { display: none !important; }
 @media screen and (max-width:1000px){
 
 
@@ -51,5 +52,8 @@ p{
   font-size: 11px;
   line-height: 2em;
 }
+
+.pc { display: none !important; }
+.sp { display: block !important; }
 }
 }
