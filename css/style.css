@@ -31,7 +31,7 @@ header{
 
 .titlecopy{
   position: absolute;
-  top: 25%;
+  top: 34%;
   left: 10%;
   font-family: josefin-sans, sans-serif;
   font-size: 30px;
@@ -208,6 +208,11 @@ ul.slider img{
 
 #menu img{
   max-width: 100%;
+}
+
+.menu-back{
+  max-width: 100%;
+  height: auto;
 }
 
 .menu_textbox{
@@ -490,15 +495,20 @@ button.nav_toggle{
 .hamburgermenu.is-active{
   padding: 0;
 }
+
+ul.slider img{
+  width: 100%;
+}
+
 /* メニュー */
 #menu{
-  position: static;
+  position: relative;
   max-width: 100%;
   height: auto;
 }
 
 #menu img{
-  display: none;
+  position: absolute;
   max-width: 100%;
 }
 
@@ -507,23 +517,21 @@ button.nav_toggle{
   transform: none;
   max-width: 100%;
   height: auto;
-  background-color: #FFF;
-  opacity: 0.8;
+  background: none;
 }
 
 .menu_textbox h2{
-  margin: 80px 0 0 0;
+  margin: 0;
   text-align: center;
   color: rgba(83,82,82,1);
+  padding: 5% 5% 0 5%;
 }
 
 .menu_wrap{
-  max-width: 100%;
+  width: 68%;
   display: block;
   margin: 0 auto;
-  padding: 0 10% 3% 10%;
-  justify-content: center;
-  color:rgba(83,82,82,1);
+  padding: 0;
 }
 
 .menubox_l{
@@ -531,19 +539,15 @@ button.nav_toggle{
 }
 
 h3{
-  margin: 45px 0 10px 0;
+  margin: 35px 0 10px 0;
   font-family: 'Jost',sans-serif;
   font-weight: lighter;
   letter-spacing: 0.2em;
 }
 
 dl.cutmenu{
-  display: flex;
-  justify-content: space-between;
   padding: 3% 0;
   margin-bottom: 10px;
-  border-bottom: dotted;
-  border-color: #2D2C2C;
   border-width: 1px;
   font-size: 11px;
 }
@@ -572,7 +576,11 @@ p.tax{
 
 .staff-box h3{
   margin-top: 15px;
-  font-size: 12px;
+  font-size: 10px;
+}
+
+.staff-box p{
+  font-size: 10px;
 }
 
 /* ニュース */
@@ -621,9 +629,7 @@ p.topic{
 }
 
 p.n_viewbox{
-  border: solid 2px #565555;
-  margin: 0 30%;
-  text-align: center;
+  margin: 0 39%;
   padding: 0.5em 1em;
 }
 
