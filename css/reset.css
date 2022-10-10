@@ -41,8 +41,6 @@ a:link,a:visited{
 .pc { display: block !important; }
 .sp { display: none !important; }
 @media screen and (max-width:1000px){
-
-
 @media screen and (max-width:750px){
 h3{
   font-size: 15px;
