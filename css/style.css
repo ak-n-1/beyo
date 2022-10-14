@@ -681,7 +681,7 @@ p.tax{
   content: '';
   position: absolute;
   left: 50%;
-  bottom: -8px;
+  bottom: -10px;
   display: inline-block;
   width: 15px;
   height: 1px;
@@ -787,7 +787,7 @@ p.n_viewbox:hover{
 
 .footerbox{
   width: 334px;
-  top: 5px;
+  top: 9px;
   left: 20px;
   height: auto;
 }
@@ -797,30 +797,30 @@ p.n_viewbox:hover{
 }
 
 img.footerlogo{
-  width: 20%;
+  width: 17%;
+  margin-bottom: 1%;
 }
 
-.footerlogo::before{
-  content: '';
-  position: absolute;
-  left: 50%;
-  bottom: -8px;
-  display: inline-block;
-  width: 15px;
-  height: 1px;
-  -moz-transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translate(-50%);
-  background-color: #565555;
-  margin: 5% 0;
+span.footerboder{
+  width: 18px;
+  height: 1.5px;
 }
 
 .sns-list{
   margin: 0;
 }
 
+.sns-list i,a:link,a:visited{
+  font-size: 1em;
+  margin: 0 1%;
+}
+
+.fa-instagram:before,.fa-twitter::before{
+  max-width: 50%;
+}
+
 .contact-list{
+  font-size: 0.5em;
   margin: 0 auto;
 }
 
