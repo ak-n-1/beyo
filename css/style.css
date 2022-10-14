@@ -453,8 +453,20 @@ p.n_viewbox:hover{
   width: 100%;
 }
 
+.access-text p{
+  line-height: 2.5em;
+}
+
 #access_title{
   width: 100%;
+}
+
+.access-box3{
+  display: flex;
+}
+
+.access-r{
+  margin-left: 50px;
 }
 
 /* フッター */
@@ -772,6 +784,14 @@ p.n_viewbox:hover{
 
 .access-text p{
   text-align: center;
+  margin: 0;
+}
+
+.access-box3{
+  display: block;
+}
+
+.access-r{
   margin: 0;
 }
 
