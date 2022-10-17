@@ -414,23 +414,23 @@ p.n_viewbox:hover{
   border: solid 2px;
 }
 
-/* アクセス */
-#access{
+/* インフォ */
+#info{
   display: flex;
   width: 100%;
   height: auto;
   margin: 10% 0;
 }
 
-.access-box1{
+.info-box1{
   width: 40%;
 }
 
-.access-box2{
+.info-box2{
   width: 100%;
 }
 
-.access-img{
+.info-img{
   width: 100%;
   opacity: 0;
   visibility: hidden;
@@ -444,42 +444,44 @@ p.n_viewbox:hover{
   transform: translateX(0);
 }
 
-.access-img img{
+.info-img img{
   max-width: 100%;
   height: auto;
 }
 
-.access-text{
+.info-text{
   width: 100%;
 }
 
-.access-text p{
-  line-height: 2.5em;
-}
-
-#access_title{
+#info_title{
   width: 100%;
 }
 
-.access-box3{
+.info-box3{
   display: flex;
 }
 
-.access-box3 p{
+.info-box3 p{
   font-family: century-gothic,sans-serif;
+  margin: 0;
 }
 
-.access-l{
+.info-l{
   display: flex;
 }
 
-.access-r{
+.info-r{
   display: flex;
   margin-left: 10%;
 }
 
-.access-l h4,.access-r h4{
-  margin-right: 30px;
+.info-l h4,.info-r h4{
+  padding: 0 30px 0 0;
+  margin: 0;
+}
+
+.info-l p,.info-r p{
+  line-height: 2em;
 }
 
 /* フッター */
@@ -643,7 +645,6 @@ ul.slider img{
 .menu_textbox h2{
   margin: 0;
   text-align: center;
-  color: rgba(83,82,82,1);
   padding: 5% 5% 0 5%;
 }
 
@@ -660,9 +661,6 @@ ul.slider img{
 
 h3{
   margin: 35px 0 10px 0;
-  font-family: 'Jost',sans-serif;
-  font-weight: lighter;
-  letter-spacing: 0.2em;
 }
 
 dl.cutmenu{
@@ -703,18 +701,11 @@ p.tax{
 }
 
 .staff-box h3::before{
-  content: '';
-  position: absolute;
   left: 50%;
   bottom: -10px;
   display: inline-block;
   width: 15px;
   height: 1px;
-  -moz-transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translate(-50%);
-  background-color: #565555;
   margin: 5% 0;
 }
 
@@ -774,62 +765,56 @@ p.n_viewbox{
 }
 
 p.n_viewbox:hover{
-  color: #FFF;
-  background-color: #565555;
   border: solid 2px;
 }
 
 /* アクセス */
-#access{
+#info{
   display: block;
   width: 100%;
   height: auto;
   margin: 13% 0;
 }
 
-.access-box1{
+.info-box1{
   display: none;
 }
 
-#access_title{
+#info_title{
   text-align: center;
 }
 
-.access-text p{
+.info-text p{
   text-align: center;
   margin: 0;
   line-height: 1.5em;
 }
 
-.access-box3{
+.info-box3{
   display: block;
   text-align: center;
   margin: 0 auto;
 }
 
-.access-l{
+.info-l{
   display: block;
+  justify-content: center;
   margin-bottom: 3%;
 }
 
-.access-r{
+.info-r{
   display: block;
   margin: 0 auto;
 }
 
-.access-l h4{
+.info-l h4,.info-r h4{
   margin: 0;
-  padding-bottom: 2%;
+  padding: 0 0 2% 0;
 }
 
-.access-r h4{
-  margin: 0;
-  padding-bottom: 2%;
-}
-
-.access-l p,.access-r p{
+.info-l p,.info-r p{
   font-size: 10px;
-  text-align: center;
+  margin: 0 auto;
 }
 
 #footer_block{
