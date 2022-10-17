@@ -465,8 +465,21 @@ p.n_viewbox:hover{
   display: flex;
 }
 
+.access-box3 p{
+  font-family: century-gothic,sans-serif;
+}
+
+.access-l{
+  display: flex;
+}
+
 .access-r{
-  margin-left: 50px;
+  display: flex;
+  margin-left: 10%;
+}
+
+.access-l h4,.access-r h4{
+  margin-right: 30px;
 }
 
 /* フッター */
@@ -785,14 +798,38 @@ p.n_viewbox:hover{
 .access-text p{
   text-align: center;
   margin: 0;
+  line-height: 1.5em;
 }
 
 .access-box3{
   display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.access-l{
+  display: block;
+  margin-bottom: 3%;
 }
 
 .access-r{
+  display: block;
+  margin: 0 auto;
+}
+
+.access-l h4{
   margin: 0;
+  padding-bottom: 2%;
+}
+
+.access-r h4{
+  margin: 0;
+  padding-bottom: 2%;
+}
+
+.access-l p,.access-r p{
+  font-size: 10px;
+  text-align: center;
 }
 
 #footer_block{
