@@ -461,6 +461,10 @@ p.n_viewbox:hover{
   display: flex;
 }
 
+.info-box3 h4{
+  color: #9A9999;
+}
+
 .info-box3 p{
   font-family: century-gothic,sans-serif;
   margin: 0;
